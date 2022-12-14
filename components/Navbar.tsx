@@ -3,6 +3,7 @@ import { IoMdMail } from "react-icons/io"
 import { TfiYoutube } from "react-icons/tfi"
 import { BsTelephoneFill, BsFacebook } from "react-icons/bs"
 import { NavItems } from "../utils/navItems"
+import { GiHamburgerMenu } from "react-icons/gi"
 
 const Navbar = () => {
 	return (
@@ -31,7 +32,7 @@ const Navbar = () => {
 			</div>
 			<div className="flex py-5 justify-between items-center px-20 sm:px-7">
 				<img src="/logo.jpg" alt="" className="w-20" />
-				<ol className="text-base flex gap-x-10 font-bold relative items-center">
+				<ol className="text-base hidden xl:flex gap-x-10 font-bold relative items-center">
 					{NavItems.map((item, index) => {
 						return (
 							<Link key={index} href={item.path}>
@@ -41,10 +42,13 @@ const Navbar = () => {
 					})}
 				</ol>
 				<Link href={""}>
-					<button className="py-3 px-6 border text-white bg-teal-700 font-light">
+					<button className="py-3 px-6 border hidden xl:flex text-white bg-teal-700 font-light">
 						Nous rejoindre
 					</button>
 				</Link>
+				<button className="py-3 px-6 border xl:hidden text-white bg-teal-700 font-light">
+					<GiHamburgerMenu />
+				</button>
 			</div>
 		</nav>
 	)
