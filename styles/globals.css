@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title-home::before {
+  position: absolute;
+  top: 33px;
+  height: 60px;
+  left: -10px;
+  right: -35px;
+  background-color: #0C766E;
+  content: "";
+  z-index: -1;
+}
+.header-home{
+  height: 250px;
+}
+@media (min-width: 640px) {
+  .header-home {
+    height: 450px;
+  }
+}
