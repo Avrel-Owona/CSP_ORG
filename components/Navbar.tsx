@@ -4,13 +4,15 @@ import { TfiYoutube } from "react-icons/tfi"
 import { BsTelephoneFill, BsFacebook } from "react-icons/bs"
 import { NavItems } from "../utils/navItems"
 import { GiHamburgerMenu } from "react-icons/gi"
+import { useState } from "react"
 
 const Navbar = () => {
+	const [toggle, setToggle] = useState<boolean>(false)
 	return (
-		<nav className="border w-full justify-center flex flex-col sticky -top-16 z-50 ease-in bg-white duration-200">
+		<nav className="w-full justify-center shadow-xl flex flex-col sticky -top-10 z-50 ease-in bg-white duration-200">
 			<div className="flex justify-end">
-				<div className="flex py-5 bg-gray-100 justify-between items-center h-full xl:w-5/6 w-full px-5 sm:px-7">
-					<div className="flex gap-x-8 text-xs sm:text-sm font-bold">
+				<div className="flex py-2 bg-gray-100 justify-between items-center h-full w-full px-5 sm:px-7">
+					<div className="flex gap-x-5 sm:gap-x-8 text-xs sm:text-sm font-bold">
 						<a href="#" target="_blank" className="flex items-center">
 							<IoMdMail className="text-teal-700 mr-2 text-xs sm:text-xl" />
 							<span>scp@gmail.com</span>
@@ -30,7 +32,7 @@ const Navbar = () => {
 					</div>
 				</div>
 			</div>
-			<div className="flex py-5 justify-between items-center px-20 sm:px-7">
+			<div className="flex relative py-5 justify-between items-center px-5 sm:px-7">
 				<img src="/logo.jpg" alt="" className="w-20" />
 				<ol className="text-base hidden xl:flex gap-x-10 font-bold relative items-center">
 					{NavItems.map((item, index) => {
@@ -41,12 +43,33 @@ const Navbar = () => {
 						)
 					})}
 				</ol>
+				{toggle ? (
+					<ol className="text-base bg-gray-100 xl:hidden flex flex-col absolute gap-x-10 font-bold left-0 top-24 w-full items-start">
+						{NavItems.map((item, index) => {
+							return (
+								<Link key={index} className="w-full h-full" href={item.path}>
+									<li className="border-b-2 border-gray-200 py-6 w-full px-5 sm:px-7">
+										{item.title}
+									</li>
+								</Link>
+							)
+						})}
+						<Link className="w-full h-full" href={"#"}>
+							<li className="text-white bg-teal-700 py-6 w-full px-5 sm:px-7">
+								Nous rejoindre
+							</li>
+						</Link>
+					</ol>
+				) : null}
 				<Link href={""}>
 					<button className="py-3 px-6 border hidden xl:flex text-white bg-teal-700 font-light">
 						Nous rejoindre
 					</button>
 				</Link>
-				<button className="py-3 px-6 border xl:hidden text-white bg-teal-700 font-light">
+				<button
+					onClick={() => setToggle(!toggle)}
+					className="xl:hidden text-4xl"
+				>
 					<GiHamburgerMenu />
 				</button>
 			</div>

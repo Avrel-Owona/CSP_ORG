@@ -32,7 +32,7 @@ const Slider = () => {
 	return (
 		<div className="w-full header-home overflow-hidden flex items-center relative">
 			<div className="absolute text-white z-10 ml-10 sm:ml-20">
-				<h3 className="text-4xl sm:text-6xl uppercase title-home relative font-bold">
+				<h3 className="text-4xl after:content-[''] sm:after:w-80 after:bg-black after:-z-10 after:absolute after:h-4 after:-left-3 sm:after:h-16 after:top-8 xl:after:-w-full sm:text-6xl uppercase title-home relative font-bold">
 					Ensemble <br /> Nous sommes <br />
 					plus fort
 				</h3>
