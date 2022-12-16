@@ -1,6 +1,6 @@
 const ActuslityCard = () => {
 	return (
-		<div className="w-full flex bg-white flex-col items-center sm:w-80 xl:w-96 sm:mx-2 mt-10">
+		<div className="w-full border flex bg-white flex-col items-center sm:w-80 xl:w-96 sm:mx-2 mt-10">
 			{/* Header */}
 			<div className="relative overflow-hidden">
 				<img

@@ -5,7 +5,7 @@ export const NavItems = [
 	},
 	{
 		title: "Actualités",
-		path: "/",
+		path: "/actualites",
 	},
 	{
 		title: "Qui sommes nous",
