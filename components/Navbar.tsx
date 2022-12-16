@@ -15,7 +15,7 @@ const Navbar = () => {
 					<div className="flex gap-x-5 sm:gap-x-8 text-xs sm:text-sm font-bold">
 						<a href="#" target="_blank" className="flex items-center">
 							<IoMdMail className="text-teal-700 mr-2 text-xs sm:text-xl" />
-							<span>scp@gmail.com</span>
+							<span>csp@gmail.com</span>
 						</a>
 						<a href="#" target="_blank" className="flex items-center">
 							<BsTelephoneFill className="text-teal-700 mr-2 text-xs sm:text-xl" />
