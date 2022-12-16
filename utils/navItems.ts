@@ -9,7 +9,7 @@ export const NavItems = [
 	},
 	{
 		title: "Qui sommes nous",
-		path: "/",
+		path: "/csp",
 	},
 	{
 		title: "Medias",
