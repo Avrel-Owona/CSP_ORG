@@ -1,6 +1,14 @@
+import { useRouter } from "next/router"
+import { MdArrowForwardIos } from "react-icons/md"
+
 const ActuslityCard = () => {
+	const router = useRouter()
 	return (
-		<div className="w-full border flex bg-white flex-col items-center sm:w-80 xl:w-96 sm:mx-2 mt-10">
+		<div
+			className={`w-full shadow-lg ${
+				router.asPath === "/actualites" ? "xl:w-72" : "xl:w-96"
+			} flex bg-white flex-col items-center sm:w-80  sm:mx-2 mt-10`}
+		>
 			{/* Header */}
 			<div className="relative overflow-hidden">
 				<img
@@ -13,11 +21,15 @@ const ActuslityCard = () => {
 				</span>
 			</div>
 			{/* Body */}
-			<div className="flex flex-col pt-3 pb-10 px-7">
+			<div className="flex flex-col pt-3 pb-5 px-7">
 				<div className="text-sm font-bold">
 					<span className="uppercase text-teal-700 mr-1">06. Sept</span>2022
 				</div>
-				<h2 className="font-bold text-2xl pt-2 cursor-pointer w-5/6 hover:text-teal-700 ease-in">
+				<h2
+					className={`font-bold text-2xl pt-2 cursor-pointer ${
+						router.asPath === "/actualites" ? "w-full" : "w-5/6"
+					} hover:text-teal-700 ease-in`}
+				>
 					Esther Lynch nova glavna tajnica ETUC-a
 				</h2>
 				<p className="text-gray-400 pt-3 font-light">
@@ -25,6 +37,11 @@ const ActuslityCard = () => {
 					sequi unde optio iusto necessitatibus, quia doloremque sint ut error
 					dolor beatae illo reiciendis obcaecati in quae earum, aut sunt nemo?
 				</p>
+				{router.asPath === "/actualites" ? (
+					<button className="flex items-center text-teal-700 mt-4 justify-end">
+						Lire la suite <MdArrowForwardIos className="ml-2" />
+					</button>
+				) : null}
 			</div>
 		</div>
 	)
