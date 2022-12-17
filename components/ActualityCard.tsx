@@ -6,8 +6,12 @@ const ActuslityCard = () => {
 	return (
 		<div
 			className={`w-full shadow-lg ${
-				router.asPath === "/actualites" ? "xl:w-72" : "xl:w-96"
-			} flex bg-white flex-col items-center sm:w-80  sm:mx-2 mt-10`}
+				router.asPath === "/actualites"
+					? "xl:w-72"
+					: "xl:w-96" || router.asPath === "/csp"
+					? "w-full"
+					: ""
+			} flex bg-white flex-col items-center sm:w-80 sm:mx-2 mt-10`}
 		>
 			{/* Header */}
 			<div className="relative overflow-hidden">
