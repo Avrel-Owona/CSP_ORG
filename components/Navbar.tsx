@@ -34,7 +34,7 @@ const Navbar = () => {
 			</div>
 			<div className="flex relative py-5 justify-between items-center px-5 sm:px-7">
 				<img src="/logo.jpg" alt="" className="w-20" />
-				<ol className="text-base hidden xl:flex gap-x-10 font-bold relative items-center">
+				<ol className="text-base hidden xl:flex gap-x-10 font-medium relative items-center">
 					{NavItems.map((item, index) => {
 						return (
 							<Link key={index} href={item.path}>
