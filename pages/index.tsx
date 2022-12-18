@@ -27,8 +27,10 @@ export default function Home() {
 						<ActuslityCard />
 						<ActuslityCard />
 						<ActuslityCard />
+						<ActuslityCard />
+						<ActuslityCard />
 					</div>
-					<button className="py-3 max-w-max px-6 mt-20 border xl:flex text-teal-700 border-teal-700 duration-200 ease-in text-base hover:text-white hover:bg-teal-700 font-light">
+					<button className="py-3 max-w-max px-6 mt-20 border-2 xl:flex text-teal-700 border-teal-600 duration-200 ease-in text-base hover:text-white hover:bg-teal-700 font-medium">
 						Toutes les Actualités
 					</button>
 				</div>
