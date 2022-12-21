@@ -25,7 +25,7 @@ const ActuslityCard = () => {
 				</span>
 			</div>
 			{/* Body */}
-			<div className="flex flex-col pt-3 pb-5 px-7">
+			<div className="flex flex-col pt-3 pb-5 px-7 text-start">
 				<div className="text-sm font-bold">
 					<span className="uppercase text-teal-700 mr-1">06. Sept</span>2022
 				</div>
@@ -36,7 +36,7 @@ const ActuslityCard = () => {
 				>
 					Esther Lynch nova glavna tajnica ETUC-a
 				</h2>
-				<p className="text-gray-400 pt-3 font-light">
+				<p className="text-gray-400 pt-3 font-light text-base">
 					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
 					sequi unde optio iusto necessitatibus, quia doloremque sint ut error
 					dolor beatae illo reiciendis obcaecati in quae earum, aut sunt nemo?
