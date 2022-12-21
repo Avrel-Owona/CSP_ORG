@@ -4,7 +4,8 @@ import { TfiYoutube } from "react-icons/tfi"
 
 const MembersSection = () => {
 	return (
-		<section className="bg-teal-700 w-full py-10 sm:py-16 xl:py-24 flex flex-col justify-center sm:justify-around items-start px-5 sm:px-20">
+		<section className="bg-teal-700 overflow-hidden relative w-full py-10 sm:py-16 xl:py-24 flex flex-col justify-center sm:justify-around items-start px-5 sm:px-20">
+			<img src="mili.png" className="absolute -bottom-10 right-0 w-3/6" />
 			<h3 className="uppercase relative after:bottom-6 after:-left-3 z-40 text-2xl sm:text-4xl xl:text-5xl after:content-[''] after:h-12 after:w-60 sm:after:w-96 after:bg-black text-white after:-z-10 after:absolute font-bold">
 				PRENDS LA CHOSE
 				<br />

@@ -134,22 +134,24 @@ const Slug = () => {
 					</div>
 				</div>
 
-				<div className="bg-white w-full h-max px-10 pb-10 pt-8 flex flex-col">
-					<h3 className="font-bold text-3xl">Dernières nouvelles</h3>
-					<Link href={"#"} className="flex mt-8">
-						<div className="overflow-hidden w-3/6">
-							<img src="cover.jpg" />
-						</div>
-						<div className="w-3/6 px-5">
-							<h4 className="text-teal-700 font-bold flex items-center">
-								<FaCalendarAlt className="mr-1" />
-								21 Sept 22
-							</h4>
-							<p className="text-base font-bold">
-								Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-							</p>
-						</div>
-					</Link>
+				<div className="relative">
+					<div className="bg-white sticky top-24 w-full h-max px-10 pb-10 pt-8 flex flex-col">
+						<h3 className="font-bold text-3xl">Dernières nouvelles</h3>
+						<Link href={"#"} className="flex mt-8">
+							<div className="overflow-hidden w-3/6">
+								<img src="cover.jpg" />
+							</div>
+							<div className="w-3/6 px-5">
+								<h4 className="text-teal-700 font-bold flex items-center">
+									<FaCalendarAlt className="mr-1" />
+									21 Sept 22
+								</h4>
+								<p className="text-base font-bold">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+								</p>
+							</div>
+						</Link>
+					</div>
 				</div>
 			</div>
 			<SocialSection />

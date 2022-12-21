@@ -12,10 +12,6 @@ export const NavItems = [
 		path: "/csp",
 	},
 	{
-		title: "Medias",
-		path: "/",
-	},
-	{
 		title: "Web TV",
 		path: "/",
 	},
