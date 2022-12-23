@@ -50,7 +50,7 @@ export default function Home() {
 				</div>
 			</section>
 			<MembersSection />
-			<section className="mt-44 pb-20">
+			<section className="sm:mt-44 pb-20 w-full">
 				<div className="hidden lg:flex items-center sm:justify-between px-7 lg:px-20 justify-center xl:pl-10 flex-wrap">
 					<h3 className="uppercase relative after:bottom-0 sm:after:-bottom-2 after:-left-3 z-40 text-2xl sm:text-5xl after:content-[''] after:h-4 sm:after:h-7 after:w-44 sm:after:w-80 after:bg-teal-700 after:-z-10 after:absolute font-bold">
 						Actualités
@@ -69,10 +69,10 @@ export default function Home() {
 							// initialSlide: 0,
 							slidesPerView: 2,
 						},
-						//   768: {
-						//     // width: 768,
-						//     slidesPerView: 3,
-						//   },
+						// 768: {
+						// 	// width: 768,
+						// 	slidesPerView: 3,
+						// },
 						1000: {
 							// width: 768,
 							slidesPerView: 3,
@@ -95,11 +95,12 @@ export default function Home() {
 					}}
 					navigation={true}
 					modules={[Pagination, Navigation]}
-					className="mySwiper mt-10 px-7 flex flex-col items-center"
+					className="mySwiper mt-10 flex flex-col justify-center items-center"
 				>
 					<div className="border-0.5 mr-3">
 						<SwiperSlide
-						// onClick={() => getActuality(actuality.path, actuality.id)}
+							className="px-5"
+							// onClick={() => getActuality(actuality.path, actuality.id)}
 						>
 							<ActuslityCard />
 						</SwiperSlide>
@@ -145,12 +146,9 @@ export default function Home() {
 						</SwiperSlide>
 					</div>
 
-					<Link href="/actualites">
-						<button className="text-teal-700 lg:hidden border-0.5 w-max mt-10 sm:mt-20 font-extralight sm:font-light border-orange-400 text-sm sm:text-base flex items-center px-5 py-2 sm:px-12 sm:py-4">
-							Toutes les actualités{" "}
-							<BsFillArrowRightCircleFill className="pl-3 text-2xl sm:text-3xl" />
-						</button>
-					</Link>
+					<button className="py-3 sm:hidden max-w-max px-6 mt-7 border-2 flex text-teal-700 border-teal-600 duration-200 ease-in text-base hover:text-white hover:bg-teal-700 font-medium">
+						Toutes les vidéos
+					</button>
 				</Swiper>
 			</section>
 			<section>

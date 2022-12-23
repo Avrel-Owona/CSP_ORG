@@ -21,7 +21,7 @@ const Slug = () => {
 	return (
 		<div className="flex flex-col">
 			<div className="bg-gray-100 sm:px-10 flex pt-10 pb-20">
-				<div className="flex flex-col w-4/6 pr-5">
+				<div className="flex flex-col w-full sm:w-4/6 px-5 sm:pr-5">
 					<div className="" style={{ maxHeight: "38rem" }}>
 						<Swiper
 							loop={true}
@@ -134,7 +134,7 @@ const Slug = () => {
 					</div>
 				</div>
 
-				<div className="relative">
+				<div className="relative hidden xl:block">
 					<div className="bg-white sticky top-24 w-full h-max px-10 pb-10 pt-8 flex flex-col">
 						<h3 className="font-bold text-3xl">Dernières nouvelles</h3>
 						<Link href={"#"} className="flex mt-8">
